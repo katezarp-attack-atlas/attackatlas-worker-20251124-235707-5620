@@ -1,0 +1,12 @@
+worker:
+  provider: github-actions
+  max_runtime: 5h
+  batch_size: 10
+  event_bus:
+    type: rabbitmq
+
+github:
+  runner_type: ubuntu-latest
+  timeout_minutes: 360
+
+
